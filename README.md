@@ -43,10 +43,9 @@ The CSV has one row per article, including articles with no comments. `engagemen
 
 ## Search
 
-Start the graphical search interface:
-
-```sh
-.venv/bin/streamlit run app.py
+The app is deploy at:
+```
+https://w04-text-search-system-7q2vpnrgjppckywhegq4xv.streamlit.app/
 ```
 
 Enter a query and click **Search** to see matching article titles, top comments, and links. The first search builds the Whoosh index; later searches and Streamlit reruns reuse the saved index. If the CSV changes, the index is rebuilt once for the new data.
